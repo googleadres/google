@@ -4,13 +4,28 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Index - Moja strona</title>
+    <title>Google GiT</title>
 </head>
+
+<script type="text/javascript">
+    var dzisiaj = new Date();
+    var dzien   = dzisiaj.getDate();
+    var miesiac = dzisiaj.getMonth();
+
+    var godzina = dzisiaj.getHours();
+    var minuta = dzisiaj.minuta();
+    var sekunda = dzisiaj.sekunda();
+
+
+</script>
 
 <body>
 
     <h1>Witaj na mojej stronie GiT</h1>
-
+    <div id="zegar"> Ten tekst został skasowany przez inner HTML </div>
+        <script type="text/javascript">
+        document.getElementById("zegar").innerHTML = dzien
+        </script>
 </body>
 
 </html>
